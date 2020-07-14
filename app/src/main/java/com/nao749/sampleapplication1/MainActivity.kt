@@ -7,6 +7,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //ActivityとlayoutFileは結びついている
+        //個々のViewなどは結びついていない
+        //kotlinAndroidExtensionsのプラグインが入っていればわざわざfindViewIdが必要ない
         setContentView(R.layout.activity_main)
 
         //フラグメントの生成

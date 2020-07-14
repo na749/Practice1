@@ -25,6 +25,9 @@ class ButtonFragment : Fragment(), View.OnClickListener {
         button.setOnClickListener(this)
     }
 
+    //buttonのクリック処理
+    //interfaceになっている（関数型インターフェース）
+    //setOnClickListenerの中の唯一の処理（λ式の中の処理）
     override fun onClick(button : View?) {
         if(editName.text.toString() == ""){
             return
